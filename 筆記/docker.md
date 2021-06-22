@@ -90,3 +90,9 @@ Docker 須持續執行任務，否則執行完便會死亡。
 * 執行指令（讓網頁伺服器跑在前景）
 
       # docker run -d -p 8080:80 centos:web1.0 /usr/sbin/apachect1 -DFOREGROUND
+
+---
+
+## 參考資料
+
+1. iT邦幫忙：https://ithelp.ithome.com.tw/articles/10193534
