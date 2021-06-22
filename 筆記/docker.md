@@ -2,11 +2,9 @@
 
 ## 簡介
 
-### Docker 是一種輕量級虛擬化的技術，可快速搭建虛擬環境，不適合集合大量工作在一個 Docker 上，這樣維護起來才會比較輕鬆。
+Docker 是一種輕量級虛擬化的技術，可快速搭建虛擬環境，不適合集合大量工作在一個 Docker 上，這樣維護起來才會比較輕鬆。
 
-### Docker 須持續執行任務，否則執行完便會死亡。
-
-<br/>
+Docker 須持續執行任務，否則執行完便會死亡。
 
 ## 常用指令
 
@@ -14,9 +12,10 @@
 
 * `docker images`：查詢鏡像
 
-* `docker ps`：列出正在執行的 docker 
+* `docker ps`：列出正在執行的 docker
 
-  > -a：列出所有 docker ，包含正在執行和已經死亡的<br/>
+  > -a：列出所有 docker ，包含正在執行和已經死亡的
+  >
   > -q：列出 docker 的 ID
 
 * `docker rmi ImageID`：刪除鏡像
@@ -29,11 +28,16 @@
 
 * `docker run -itd -p 8080:80 httpd`：執行 httpd docker，綁定本機 8080 埠
 
-  > -i，--interactive：讓 docker 的標準輸入保持打開<br/>
-  > -t，--tty：讓 Docker 分配一個虛擬終端（pseudo-tty）並綁定到 docker 的標準輸入上<br/>
-  > -d，--detach：讓 docker 處於背景執行狀態並印出 dockerID<br/>
-  > --name：指定 docker 名稱<br/>
-  > -p，--publish：將 docker 發布到指定的埠號<br/>
+  > -i，--interactive：讓 docker 的標準輸入保持打開
+  >
+  > -t，--tty：讓 Docker 分配一個虛擬終端（pseudo-tty）並綁定到 docker 的標準輸入上
+  >
+  > -d，--detach：讓 docker 處於背景執行狀態並印出 dockerID
+  >
+  > --name：指定 docker 名稱
+  >
+  > -p，--publish：將 docker 發布到指定的埠號
+  >
   > --rm： docker 工作完自動刪除
 
 * `docker rm dockerName`：刪除狀態是 Exited 的 docker
